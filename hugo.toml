@@ -1,3 +1,22 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Project'
+baseURL = 'https://seanwallis.com/'
+languageCode = 'en-gb'
+title = 'Sean Wallis'
+theme = "seanwallis-theme"
+enableRobotsTXT = true
+
+[params]
+  author = "Sean Wallis"
+  avatar = "/media/links/home-link.png"
+  seotitle = "Sean Wallis"
+  subtitle = "Consultant. Full-Stack Developer.<br>PHP, JavaScript, React, Node.js, AWS."
+  description = "Consultant. Full Stack Software Engineer. PHP, JavaScript, React, Node.js, AWS."
+
+  # Choose your social networks
+  github = "sean-ww"
+  linkedin = "seanwallis1"
+
+[markup]
+  [markup.highlight]
+    style = "rrt" # https://gohugo.io/quick-reference/syntax-highlighting-styles/
+    lineNos = true    # Enable line numbers
+    guessSyntax = true # Guess language if not specified

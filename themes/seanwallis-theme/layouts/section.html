@@ -1,0 +1,6 @@
+{{ define "main" }}
+  {{ .Content }}
+  {{ range .Pages.ByDate.Reverse }}
+    {{ partial "post-summary.html" . }}
+  {{ end }}
+{{ end }}
