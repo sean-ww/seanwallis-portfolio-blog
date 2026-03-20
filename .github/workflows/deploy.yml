@@ -1,0 +1,41 @@
+name: Build and Deploy Hugo Site
+
+on:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: write
+
+jobs:
+  build-deploy:
+    name: Build and deploy Hugo
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Install Hugo
+        run: |
+          HUGO_VERSION=0.157.0
+          URL="https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.deb"
+          echo "Downloading Hugo from $URL"
+          curl -OLkSs "$URL"
+          sudo dpkg -i hugo*.deb
+
+      - name: Build with Hugo
+        run: |
+          hugo --cleanDestinationDir --ignoreCache
+          echo "seanwallis.com" > public/CNAME
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          keep_history: true
