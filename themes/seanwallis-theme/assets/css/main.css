@@ -452,7 +452,7 @@ template {
 html {
   font-size: 16px;
   line-height: 1.618;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", "Helvetica Neue", sans-serif;
+  font-family: sans-serif;
 }
 
 body {
@@ -492,7 +492,7 @@ a:focus, a:hover {
   font-weight: 700;
 }
 .site-header a {
-  opacity: 0.5;
+  opacity: 0.6;
   color: rgb(36, 36, 36);
 }
 .site-header a:focus, .site-header a:hover {
@@ -509,7 +509,7 @@ a:focus, a:hover {
 .main {
   position: relative;
   margin-left: 20rem;
-  padding: 1rem 2rem;
+  padding: 1rem 1.2rem;
   max-width: 70rem;
   min-height: 100vh;
   box-sizing: border-box;
@@ -563,6 +563,9 @@ a:focus, a:hover {
 .highlight {
   opacity: 0.9;
 }
+.highlight div, .highlight pre {
+  overflow: auto;
+}
 
 /* Google fonts Lobster */
 @font-face {
@@ -584,14 +587,40 @@ a:focus, a:hover {
 
 /* Header */
 
+.avatar-link {
+  display: inline-block;
+}
 .avatar {
+  background: #0072B9;
+  display: inline-block;
   margin-top: 3rem;
-  width: 8rem;
-  height: 8rem;
+  width: 7.6rem;
+  height: 5rem;
   border: 4px solid rgb(255, 255, 255);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   transition: all ease-out 0.5s;
   transform: matrix(0.8, 0.1, -0.1, 0.8, 0, 0);
+}
+.avatar::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: 0.9rem;
+  right: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: 900;
+  text-align: right;
+  text-transform: uppercase;
+  color: white;
+  pointer-events: none;
+  width: 5rem;
+  line-height: 0.8;
+  letter-spacing: -1px;
+  font-family: sans-serif;
+  -webkit-transform: scale(1.2,1.6);
+  -moz-transform: scale(1.2,1.6);
+  -ms-transform: scale(1.2,1.6);
+  -o-transform: scale(1.2,1.6);
+  transform: scale(1.2,1.6);
 }
 .avatar:hover, .home-avatar {
   transform: matrix(1, 0, 0, 1, 0, 0);
@@ -605,6 +634,12 @@ a:focus, a:hover {
     height: 2rem;
     margin-top: 0;
     border: 2px solid rgb(255, 255, 255);
+  }
+  .avatar::after {
+    content: attr(data-label-short);
+    bottom: 0.5rem;
+    right: 0.8rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -622,7 +657,7 @@ a:focus, a:hover {
 
 .subtitle {
   margin: 0;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 .page-menu ul {
@@ -716,12 +751,21 @@ a:focus, a:hover {
 }
 
 
-/* post-summary */
+/* posts */
+
+.post-wrapper {
+  margin: 0 0.8rem;
+}
+
+.post-content img {
+  max-width: 100%;
+  height: auto;
+}
 
 .post-entry {
-    position: relative;
-    line-height: 1.8;
-    border-top: 1px solid transparent;
+  position: relative;
+  line-height: 1.8;
+  border-top: 1px solid transparent;
 }
 .post-entry + .post-entry {
     border-color: rgb(244, 243, 241);
@@ -783,6 +827,19 @@ a:focus, a:hover {
   letter-spacing: 1px;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.post-footer {
+  margin-bottom: 3rem;
+}
+
+.post-copyright {
+  color: #CC0000;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  border-radius: 3px;
+  font-size: 0.9rem;
+  opacity: 0.9;
 }
 
 /* Icons */
@@ -902,4 +959,143 @@ a:focus, a:hover {
 
 .icon-quora::before {
   content: "\f2c4";
+}
+
+/* Errors */
+.not-found {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  height: 15.5rem;
+  font-family: "SFMono-Regular", "Liberation Mono", "Roboto Mono", Menlo, Monaco, Consolas, "Courier New", Courier, monospace;
+  text-align: center;
+}
+.not-found .error-text {
+  font-size: 1.25rem;
+}
+
+
+/* Portfolio */
+
+.splide {
+  max-width: 100%;
+  margin: 1rem auto;
+}
+.splide .splide__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.portfolio-filter {
+  margin-bottom: 2rem;
+}
+
+/* Hide radios */
+.portfolio-filter input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Filter buttons container */
+.portfolio-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1rem 0;
+}
+
+/* Base button style */
+.portfolio-filters label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding-left: 0.5rem;
+
+  border: 1px solid #f0f0f0;
+  color: black;
+  background: #f0f0f0;
+
+  font-size: 0.9rem;
+  cursor: pointer;
+  user-select: none;
+
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+.portfolio-filters label:hover {
+  background: #e0e0e0;
+}
+
+/* ACTIVE FILTER (JS adds .is-active) */
+.portfolio-filters label.is-active {
+  background: #0072B9;
+  color: white;
+}
+
+.portfolio-filters .count {
+  display: inline-block;
+  padding: 0.1rem 0.45rem;
+  font-size: 0.75rem;
+  line-height: 2;
+  background: #0072B9;
+  color: white;
+}
+
+.portfolio-grid {
+  zoom: 1;
+}
+
+.portfolio-grid::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.portfolio-card {
+  float: left;
+  width: 320px;
+  min-height: 460px;
+  margin: 0 0.8rem 0.8rem 0;
+  box-sizing: border-box;
+  background: #0072B9;
+  color: #fff;
+  padding: 1.5rem;
+  display: block;
+  opacity: 1;
+  transform: scale(1);
+  transition:
+    opacity 0.35s ease,
+    transform 0.35s ease;
+  border: 4px solid rgb(255, 255, 255);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-card .portfolio-card-title {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.portfolio-card .card-images {
+  background: white;
+}
+
+.portfolio-card p {
+  margin: 0;
+  line-height: 1.2;
+  font-size: 0.8rem;
+}
+
+.skills-list {
+  line-height: 1.2;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-top: 0.8rem;
 }

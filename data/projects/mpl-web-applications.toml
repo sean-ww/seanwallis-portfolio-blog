@@ -1,0 +1,12 @@
+title = "MPL Apps"
+index = 12
+skills = ['management-consulting','javascript','sql','php','performance-improvement']
+description = "Redevelopment of MPL's LeanDriver Performance Management System into PHP web and smartphone applications for demo use."
+
+[[images]]
+src = "/media/projects/mplApp1.png"
+alt = "Mobile screenshots"
+
+[[images]]
+src = "/media/projects/mplApp2.png"
+alt = "System dashboard"

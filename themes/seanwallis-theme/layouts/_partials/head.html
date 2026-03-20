@@ -1,6 +1,39 @@
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
 <meta name="author" content="{{ .Site.Params.author }}" />
 <meta name="description" content="{{ .Site.Params.description }}" />
-<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+<title>{{ printf "%s | %s" .Title site.Title }}</title>
+
+
+<!-- Permalink & RSSlink -->
+<link rel="canonical" href="{{ .Permalink }}" />
+
+<!-- Rendering -->
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="format-detection" content="telephone=no,email=no,address=no" />
+
+<!-- SEO Prefs -->
+{{  if eq .Title "404 Page not found" }}
+<meta name="robots" content="noindex,follow" />
+{{ else }}
+<meta name="robots" content="index,follow" />
+{{ end }}
+<meta name="referrer" content="origin-when-cross-origin" />
+
+<!-- Favicon and Touch icons -->
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="{{ .Site.Title }}" />
+<meta name="msapplication-tooltip" content="{{ .Site.Title }}" />
+<link rel="icon" href="{{ "/img/favicon.ico" | relURL }}" />
+<link rel="icon" href="{{ "/img/icon.svg" | relURL }}" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="{{ "/img/apple-touch-icon.png" | relURL }}" />
+<link rel="apple-touch-icon" sizes="72x72" href="{{ "/img/apple-touch-icon-72x72.png" | relURL }}" />
+<link rel="apple-touch-icon" sizes="114x114" href="{{ "/img/apple-touch-icon-114x114.png" | relURL }}" />
+
+<!-- Add CSS and JS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/css/splide.min.css">
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/js/splide.min.js" defer></script>
 {{ partialCached "head/css.html" . }}
+<script src="https://cdn.jsdelivr.net/npm/shufflejs@6" defer></script>
+{{ partialCached "head/js.html" . }}

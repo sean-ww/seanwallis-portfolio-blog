@@ -1,0 +1,12 @@
+title = "Charlie Bighams"
+index = 5
+skills = ['management-consulting','excel','vba','performance-improvement']
+description = "Upgrade of the existing Excel based Performance Management System from Excel 2003 to 2007, accompanied by recommended hardware changes, to reduce archiving from 45 minutes to 60 seconds."
+
+[[images]]
+src = "/media/projects/bighams1.png"
+alt = "Charlie Bighams logo"
+
+[[images]]
+src = "/media/projects/bighams3.png"
+alt = "Excel update image"

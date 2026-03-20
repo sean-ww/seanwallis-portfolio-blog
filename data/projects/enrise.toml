@@ -1,0 +1,16 @@
+title = "Enrise"
+index = 35
+skills = ['react','aws','devops','vuejs','symfony','laravel','nodejs','sql','javascript','php']
+description = "Dutch-based agency work: accessibility projects, back-end CMS and front-end solutions for clients such as Schiphol Airport, Beslist.nl, Gemeente Nijmegen, Orlaco, DCMR.nl and Mobiliteitsfabriek."
+
+[[images]]
+src = "/media/projects/enrise1.png"
+alt = "Enrise logo"
+
+[[images]]
+src = "/media/projects/enrise2.png"
+alt = "bestlist.nl logo"
+
+[[images]]
+src = "/media/projects/enrise3.png"
+alt = "Amsterdam Schiphol Airport logo"

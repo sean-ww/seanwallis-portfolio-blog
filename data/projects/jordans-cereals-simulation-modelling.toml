@@ -1,0 +1,16 @@
+title = "Jordans Ryvita"
+index = 18
+skills = ['management-consulting','simulation']
+description = "Simulation modelling of forklift movements and evaluation of future alternatives at the end of cereal packing lines, dealing with over 1 million packs per week - using Simul8."
+
+[[images]]
+src = "/media/projects/jordans3.png"
+alt = "Jordans Ryvita logo"
+
+[[images]]
+src = "/media/projects/jordans2.png"
+alt = "Jordans Ryvita layout"
+
+[[images]]
+src = "/media/projects/jordans1.png"
+alt = "Jordans Ryvita simulation"

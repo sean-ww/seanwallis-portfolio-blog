@@ -1,0 +1,12 @@
+title = "Cadbury Bournville"
+index = 6
+skills = ['management-consulting','excel','vba','planning']
+description = "VBA programming and development of an Excel based automated labour planning tool, linked with an Access database, for the Bournville site covering four manufacturing units."
+
+[[images]]
+src = "/media/projects/cadbury3.png"
+alt = "Cadbury logo"
+
+[[images]]
+src = "/media/projects/cadbury1.png"
+alt = "Cadbury labour plan"

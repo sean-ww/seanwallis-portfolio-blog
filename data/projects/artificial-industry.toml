@@ -1,0 +1,12 @@
+title = "Artificial Industry"
+index = 32
+skills = ['vuejs','laravel','nodejs','sql','javascript','php']
+description = "Agency work in the Netherlands: Ambulance reporting API and front-end, therapy web app and registration, flower card app and exchange layer, interim recruitment management app, personal care assistant legacy system maintenance and refactoring."
+
+[[images]]
+src = "/media/projects/artIndustry.png"
+alt = "Tulip field"
+
+[[images]]
+src = "/media/projects/artIndustry2.png"
+alt = "Vanad Group logo"

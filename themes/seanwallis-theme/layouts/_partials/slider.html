@@ -1,0 +1,43 @@
+{{- $images    := .images    | default slice -}}
+{{- $type      := .type      | default "fade" -}}
+{{- $autoplay  := .autoplay  | default false -}}
+{{- $interval  := .interval  | default 5000 -}}
+{{- $arrows    := .arrows    | default false -}}
+{{- $pagination:= .pagination| default true -}}
+{{- $lazy      := .lazy      | default true -}}
+{{- $height    := .height    | default "auto" -}}
+
+{{- if gt (len $images) 0 -}}
+<div class="splide"
+     data-splide='{
+         "type": "{{ $type }}",
+         "autoplay": {{ $autoplay }},
+         "interval": {{ $interval }},
+         "pauseOnHover": true,
+         "arrows": {{ $arrows }},
+         "pagination": {{ $pagination }},
+         "lazyLoad": "{{ cond $lazy "nearby" "false" }}",
+         "rewind": true,
+         "keyboard": true
+       }'>
+  <div class="splide__track">
+    <ul class="splide__list">
+      {{- range $images -}}
+      <li class="splide__slide">
+        {{ if reflect.IsMap . }}
+          <img src="{{ .src | absURL }}"
+               {{- if $lazy }} loading="lazy"{{- end }}
+               alt="{{ .alt }}"
+               class="splide__lazy">
+        {{ else }}
+          <img src="{{ . | absURL }}"
+               {{- if $lazy }} loading="lazy"{{- end }}
+               alt="Project Image"
+               class="splide__lazy">
+        {{- end -}}
+      </li>
+      {{- end -}}
+    </ul>
+  </div>
+</div>
+{{- end -}}

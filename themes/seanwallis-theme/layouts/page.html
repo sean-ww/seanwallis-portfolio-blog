@@ -1,8 +1,16 @@
 {{ define "main" }}
-  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-  {{ $dateHuman := .Date | time.Format ":date_long" }}
-  <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+  <div class="post-wrapper">
+    <header class="post-header">
+      <h1 class="post-title">{{ .Title }}</h1>
+      <span class="post-meta">@{{ if isset .Site.Params "author" }}{{ .Site.Params.author }}{{ else }}{{ .Site.Params.author }}{{ end }} · {{ .Date.Format "Jan 2, 2006" }} · {{ .ReadingTime }} min read</span>
+    </header>
 
-  {{ .Content }}
-  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+    <article class="post-content">{{ .Content }}</article>
+
+    <footer class="post-footer">
+      <p class="post-copyright">
+        {{ if .Site.Copyright }}{{ .Site.Copyright | safeHTML }} {{ .Date.Format "2006" }}-{{ dateFormat "2006" now }}. {{ end }}{{ if gt (div (sub now.Unix .Lastmod.Unix) 86400) 100 }}This post was published <strong>{{ div (sub now.Unix .Lastmod.Unix) 86400 }}</strong> days ago, content in the post may be outdated.{{ end }}
+      </p>
+    </footer>
+  </div>
 {{ end }}

@@ -1,0 +1,16 @@
+title = "PrintOnDemand-WorldWide.com"
+index = 16
+skills = ['simulation']
+description = "Analysis of lean issues, development of a discrete-event simulation using Simul8 software and recommendations to cut costs, shorten lead times and reduce waste."
+
+[[images]]
+src = "/media/projects/pod1.png"
+alt = "PrintOnDemand-WorldWide.com logo"
+
+[[images]]
+src = "/media/projects/pod2.png"
+alt = "Printing factory simulation"
+
+[[images]]
+src = "/media/projects/pod3.png"
+alt = "Simulation diagram"

@@ -1,0 +1,16 @@
+title = "Akzo Nobel"
+index = 17
+skills = ['management-consulting','excel','simulation']
+description = "Capacity analysis simulation within a multinational paints and coatings company, testing different scenarios with a high degree of variability - using Simul8."
+
+[[images]]
+src = "/media/projects/akzo2.png"
+alt = "Akzo Nobel diagram"
+
+[[images]]
+src = "/media/projects/akzo3.png"
+alt = "Akzo Nobel simulation"
+
+[[images]]
+src = "/media/projects/akzo1.png"
+alt = "Akzo Nobel logo"

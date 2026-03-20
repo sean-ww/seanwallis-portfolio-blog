@@ -1,0 +1,16 @@
+title = "Mr Fothergill's Seeds"
+index = 15
+skills = ['management-consulting','excel','vba','simulation']
+description = "Development of an Excel-based capacity simulation for a popular UK seed company."
+
+[[images]]
+src = "/media/projects/fothergill2.png"
+alt = "Lean graph"
+
+[[images]]
+src = "/media/projects/fothergill3.png"
+alt = "Mr Fothergill's Seeds logo"
+
+[[images]]
+src = "/media/projects/fothergill1.png"
+alt = "Lean dashboard"

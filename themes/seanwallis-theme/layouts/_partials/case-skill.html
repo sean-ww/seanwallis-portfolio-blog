@@ -1,0 +1,22 @@
+{{/*
+  case-skill.html
+  Takes a single lowercase skill name and returns the display-cased version.
+*/}}
+
+{{ $skill := . }}
+
+{{ $display := title $skill }}
+
+{{ if in (slice "sql" "php" "vba" "aws") $skill }}
+  {{ $display = upper $skill }}
+{{ else if eq $skill "javascript" }}
+  {{ $display = "JavaScript" }}
+{{ else if eq $skill "vuejs" }}
+  {{ $display = "Vue.js" }}
+{{ else if eq $skill "nodejs" }}
+  {{ $display = "Node.js" }}
+{{ else if eq $skill "devops" }}
+  {{ $display = "DevOps" }}
+{{ end }}
+
+{{ return replaceRE "-" " " $display }}

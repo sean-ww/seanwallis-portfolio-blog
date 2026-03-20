@@ -1,0 +1,16 @@
+title = "DHL Ferrero"
+index = 20
+skills = ['management-consulting','sql','php','coaching','performance-improvement']
+description = "Design, development, setup and coaching of a bespoke performance management system - a PHP web application used to drive performance in a co-packing environment."
+
+[[images]]
+src = "/media/projects/dhlFerrero3.png"
+alt = "DHL Ferrero logo"
+
+[[images]]
+src = "/media/projects/dhlFerrero2.png"
+alt = "Lean dashboard"
+
+[[images]]
+src = "/media/projects/dhlFerrero1.png"
+alt = "Lean performance tracker"

@@ -1,0 +1,15 @@
+title = "MPL Operations"
+skills = ['management-consulting','javascript','process-improvement','sql','php','coaching']
+description = "The creation of a global system providing real time, total visibility of MPL operations across different sites. The system allows consultants to securely manage their programmes in remote locations, whilst providing new depths of information and vast time savings to internal admin processes."
+
+[[images]]
+src = "/media/projects/mplOps1.png"
+alt = "MPL logo"
+
+[[images]]
+src = "/media/projects/mplOps2.png"
+alt = "Data entry screenshot"
+
+[[images]]
+src = "/media/projects/mplOps3.png"
+alt = "Dashboard screenshot"

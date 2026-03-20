@@ -1,0 +1,7 @@
+title = "Greencore"
+skills = ['management-consulting','excel','vba','planning']
+description = "Development of a planning and scheduling system for a ready meal manufacturing site."
+
+[[images]]
+src = "/media/projects/greencore1.png"
+alt = "Greencore logo"

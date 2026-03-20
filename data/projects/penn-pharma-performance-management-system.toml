@@ -1,0 +1,12 @@
+title = "Penn Pharmaceuticals"
+index = 1
+skills = ['management-consulting','excel','vba','performance-improvement']
+description = "Excel/VBA development of a performance management system for a pharmaceutical company in Wales."
+
+[[images]]
+src = "/media/projects/penn1.png"
+alt = "Performance system logo"
+
+[[images]]
+src = "/media/projects/penn2.png"
+alt = "Penn Pharmaceuticals logo"

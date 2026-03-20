@@ -1,0 +1,12 @@
+title = "Network Rail"
+index = 30
+skills = ['react','laravel','excel','vba','sql','javascript','php']
+description = "Development of various internal business systems: Training Management with eLearning, Address Change and Help Desk apps, CMS, Procurement System and a reporting tool for Active Risk Manager."
+
+[[images]]
+src = "/media/projects/networkRail2.png"
+alt = "Network Rail train"
+
+[[images]]
+src = "/media/projects/networkRail1.png"
+alt = "Network Rail logo"

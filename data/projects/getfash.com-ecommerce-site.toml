@@ -1,0 +1,23 @@
+title = "GetFash.com"
+skills = ['javascript','sql','php']
+description = "Design and development of a women's clothing e-commerce site and content management system."
+
+[[images]]
+src = "/media/projects/gf1.png"
+alt = "GetFash.com logo"
+
+[[images]]
+src = "/media/projects/gf2.png"
+alt = "GetFash.com home page"
+
+[[images]]
+src = "/media/projects/gf3.png"
+alt = "GetFash.com product page"
+
+[[images]]
+src = "/media/projects/gf4.png"
+alt = "GetFash.com look page"
+
+[[images]]
+src = "/media/projects/gf5.png"
+alt = "GetFash.com lookbook page"

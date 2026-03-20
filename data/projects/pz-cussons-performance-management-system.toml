@@ -1,0 +1,8 @@
+title = "PZ Cussons"
+index = 3
+skills = ['management-consulting','excel','vba','performance-improvement']
+description = "Design and development of a secured Excel-based Performance Management System with up to 252 individual user profiles."
+
+[[images]]
+src = "/media/projects/pz3.png"
+alt = "PZ Cussons logo"

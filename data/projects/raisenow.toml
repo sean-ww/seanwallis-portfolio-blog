@@ -1,0 +1,12 @@
+title = "RaiseNow"
+index = 50
+skills = ['devops','react','nodejs','sql','javascript','php','symfony','aws']
+description = "Principal engineer role with event‑driven systems, major migrations, restructuring, architecture design, microservices, monitoring and alerting, admin interfaces, user management, onboarding flows, payments, high‑volume ledger/payout systems, carding attacks and PCI DSS compliance."
+
+[[images]]
+src = "/media/projects/raisenow.png"
+alt = "RaiseNow logo"
+
+[[images]]
+src = "/media/projects/raisenow2.png"
+alt = "PCI DSS Compliance image"

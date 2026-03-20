@@ -1,0 +1,24 @@
+title = "Wilsons Country"
+index = 8
+skills = ['management-consulting','excel','vba','coaching','planning','performance-improvement']
+description = "Installation and coaching of a Visual Scheduling System and an automated Performance Management System, integrated with the pre-existing PR2 database, for a potato packing plant in Northern Ireland."
+
+[[images]]
+src = "/media/projects/wilsons1.png"
+alt = "Wilsons Country logo"
+
+[[images]]
+src = "/media/projects/wilsons2.png"
+alt = "Lean performance dashboard"
+
+[[images]]
+src = "/media/projects/wilsons3.png"
+alt = "Efficiency dashboard"
+
+[[images]]
+src = "/media/projects/wilsons4.png"
+alt = "Planned resources graph"
+
+[[images]]
+src = "/media/projects/wilsons5.png"
+alt = "Production line planned jobs"

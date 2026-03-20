@@ -1,0 +1,8 @@
+title = "vidaXL"
+index = 40
+skills = ['devops','vuejs','nodejs','sql','javascript','php']
+description = "Led multiple development teams based in China and Ukraine: overseeing architecture, quality and ways of working."
+
+[[images]]
+src = "/media/projects/vidaxl.png"
+alt = "vidaXL logo"

@@ -1,0 +1,16 @@
+title = "Grange Packaging"
+index = 4
+skills = ['management-consulting','excel','sql','coaching','performance-improvement']
+description = "Delivery of group and individual Lean coaching, based around the use of a Performance Management System."
+
+[[images]]
+src = "/media/projects/grange2.png"
+alt = "Systems diagram"
+
+[[images]]
+src = "/media/projects/grange1.png"
+alt = "Grange Packaging logo"
+
+[[images]]
+src = "/media/projects/grange3.png"
+alt = "Lean dashboard diagram"

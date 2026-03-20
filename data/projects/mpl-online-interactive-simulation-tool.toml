@@ -1,0 +1,16 @@
+title = "MPL Simulation Tools"
+index = 19
+skills = ['management-consulting','simulation']
+description = "Development of an online visually interactive discrete event simulation tool - Simul8 model of a bottling line scenario."
+
+[[images]]
+src = "/media/projects/bottling1.png"
+alt = "Bottling simulation"
+
+[[images]]
+src = "/media/projects/bottling2.png"
+alt = "Simulation metrics"
+
+[[images]]
+src = "/media/projects/bottling3.png"
+alt = "Production line simulation"

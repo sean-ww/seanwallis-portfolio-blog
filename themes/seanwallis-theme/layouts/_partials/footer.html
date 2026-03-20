@@ -1,1 +1,30 @@
+<script>
+  function initAllSplides() {
+    if (typeof Splide === 'undefined') {
+      setTimeout(initAllSplides, 50);
+      return;
+    }
 
+    document.querySelectorAll('.splide').forEach(function (element, index) {
+      if (!element.classList.contains('is-initialized')) {
+        const splide = new Splide(element);
+
+        splide.on('mounted', function () {
+          // Offset each carousel's first autoplay tick by its index
+          const offsetDelay = index * 1500; // 1.5s stagger between each carousel
+          setTimeout(function () {
+            splide.Components.Autoplay.play();
+          }, offsetDelay);
+        });
+
+        splide.mount();
+        element.classList.add('is-initialized');
+
+        // Pause autoplay initially — the mounted callback above restarts it
+        splide.Components?.Autoplay?.pause();
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', initAllSplides);
+</script>

@@ -1,0 +1,8 @@
+title = "Produce World"
+index = 2
+skills = ['management-consulting','excel','vba','performance-improvement']
+description = "Performance Management System support and development of an Excel-based line balancing tool."
+
+[[images]]
+src = "/media/projects/pw1.png"
+alt = "Produce World logo"

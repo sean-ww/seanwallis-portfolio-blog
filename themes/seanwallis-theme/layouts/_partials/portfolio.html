@@ -1,0 +1,65 @@
+{{/* Build a map of skill counts */}}
+{{ $skillCounts := dict }}
+
+{{ range .Site.Data.projects }}
+  {{ range .skills }}
+    {{ $skill := . }}
+    {{ $current := index $skillCounts $skill | default 0 }}
+    {{ $skillCounts = merge $skillCounts (dict $skill (add $current 1)) }}
+  {{ end }}
+{{ end }}
+
+{{/* Build slice of { name, count, display } */}}
+{{ $skills := slice }}
+
+{{ range $name, $count := $skillCounts }}
+  {{ $display := partial "case-skill.html" $name }}
+  {{ $skills = $skills | append (dict "name" $name "count" $count "display" $display) }}
+{{ end }}
+
+{{/* Sort by count descending */}}
+{{ $skills = sort $skills "count" "desc" }}
+
+<div class="portfolio-filter">
+  <input type="radio" name="filter" id="filter-all" checked>
+
+  {{ range $skills }}
+  <input type="radio" name="filter" id="filter-{{ .name }}">
+  {{ end }}
+
+  <div class="portfolio-filters">
+    <label for="filter-all">
+      All <span class="count">{{ len .Site.Data.projects }}</span>
+    </label>
+
+    {{ range $skills }}
+    <label for="filter-{{ .name }}">
+      {{ .display }} <span class="count">{{ .count }}</span>
+    </label>
+    {{ end }}
+  </div>
+
+  <div class="portfolio-grid">
+    {{ range sort .Site.Data.projects "index" "desc" }}
+      <article class="portfolio-card" data-groups='{{ .skills | jsonify }}'>
+        <h2 class="portfolio-card-title">{{ .title }}</h2>
+        <p>{{ .description }}</p>
+        <div class="card-images">
+          {{ partial "slider.html" (dict
+          "images" .images
+            "type" "fade"
+            "autoplay" true
+          ) }}
+        </div>
+        <footer class="skills-list">
+          Skills:
+          {{ $formattedSkills := slice }}
+          {{ range .skills }}
+            {{ $formattedSkills = $formattedSkills | append (partial "case-skill.html" .) }}
+          {{ end }}
+          {{ delimit $formattedSkills ", " }}
+        </footer>
+      </article>
+    {{ end }}
+  </div>
+</div>

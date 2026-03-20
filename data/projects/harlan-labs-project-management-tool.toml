@@ -1,0 +1,15 @@
+title = "Harlan Labs"
+skills = ['management-consulting','process-improvement','excel','coaching']
+description = "Design and coaching of a bespoke project management tool for a leading global research laboratory. Designed to handle over 700 tasks, dealing with concurrency and dependency issues, for a long term decommissioning project spanning 6 sites across Europe - Excel based solution pulling from MS Project."
+
+[[images]]
+src = "/media/projects/harlan2.png"
+alt = "Project tool graph"
+
+[[images]]
+src = "/media/projects/harlan1.png"
+alt = "Harlan Labs logo"
+
+[[images]]
+src = "/media/projects/harlan3.png"
+alt = "Project tool screenshot"

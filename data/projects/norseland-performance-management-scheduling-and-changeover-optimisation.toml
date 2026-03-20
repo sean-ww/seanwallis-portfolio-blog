@@ -1,0 +1,16 @@
+title = "Norseland Cheese"
+index = 5
+skills = ['management-consulting','excel','vba','planning','performance-improvement']
+description = "Implementing Excel-based performance management, scheduling and changeover optimisation systems for a speciality cheese business, utilising macros to instantaneously evaluate all possible solutions within an agreed matrix."
+
+[[images]]
+src = "/media/projects/norseland1.png"
+alt = "Norseland logo"
+
+[[images]]
+src = "/media/projects/norseland2.png"
+alt = "Schedule overview"
+
+[[images]]
+src = "/media/projects/norseland3.png"
+alt = "Visual scheduling system dashboard"

@@ -1,15 +1,15 @@
 baseURL = 'https://seanwallis.com/'
-languageCode = 'en-gb'
+languageCode = 'en-GB'
 title = 'Sean Wallis'
 theme = "seanwallis-theme"
 enableRobotsTXT = true
+copyright = "&copy; Sean Wallis"
 
 [params]
   author = "Sean Wallis"
-  avatar = "/media/links/home-link.png"
   seotitle = "Sean Wallis"
   subtitle = "Consultant. Full-Stack Developer.<br>PHP, JavaScript, React, Node.js, AWS."
-  description = "Consultant. Full Stack Software Engineer. PHP, JavaScript, React, Node.js, AWS."
+  description = "Consultant. Full-Stack Software Engineer. PHP, JavaScript, React, Node.js, AWS."
 
   # Choose your social networks
   github = "sean-ww"
