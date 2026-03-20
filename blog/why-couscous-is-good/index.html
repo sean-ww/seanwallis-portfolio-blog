@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en-GB" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta name="author" content="Sean Wallis" />
+<meta name="description" content="Consultant. Full-Stack Software Engineer. PHP, JavaScript, React, Node.js, AWS." />
+<title>Why Couscous Is Good For Documentation | Sean Wallis</title>
+
+
+
+<link rel="canonical" href="https://seanwallis.com/blog/why-couscous-is-good/" />
+
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="format-detection" content="telephone=no,email=no,address=no" />
+
+
+
+<meta name="robots" content="index,follow" />
+
+<meta name="referrer" content="origin-when-cross-origin" />
+
+
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Sean Wallis" />
+<meta name="msapplication-tooltip" content="Sean Wallis" />
+<link rel="icon" href="/img/favicon.ico" />
+<link rel="icon" href="/img/icon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png" />
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/css/splide.min.css">
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/js/splide.min.js" defer></script>
+
+      <link rel="stylesheet" href="/css/main.min.ea43b610e8683cd8b9318048687b80f453fca667f8e5bf9a4e3afa18f69d8520.css" integrity="sha256-6kO2EOhoPNi5MYBIaHuA9FP8pmf45b&#43;aTjr6GPadhSA=" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/shufflejs@6" defer></script>
+
+        <script src="/js/main.cfbb34dd9f413d7eec6556b38d0b8b405285cb82bb3a5f422b8bd547798a53d4.js" integrity="sha256-z7s03Z9BPX7sZVazjQuLQFKFy4K7Ol9CK4vVR3mKU9Q=" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+  <header class="site-header">
+    
+<a class="avatar-link" href="/" title="Home">
+  <div class="avatar" data-label="SEAN WALLIS" data-label-short="S"></div>
+</a>
+
+
+
+  <nav class="page-menu" aria-label="Page Menu">
+    <ul>
+    <li>
+      <a href="/">Portfolio</a>
+    </li>
+    <li>
+      <a aria-current="true" class="ancestor" href="/blog/">Blog</a>
+    </li>
+    </ul>
+  </nav>
+
+
+
+  <h2 class="title">Sean Wallis - Blog</h2>
+
+<p class="subtitle">Consultant. Full-Stack Developer.<br>PHP, JavaScript, React, Node.js, AWS.</p>
+
+<nav class="social-menu">
+  <ul class="social-list">
+
+    
+
+    
+    <li class="social-item">
+      <a href="https://github.com/sean-ww" title="GitHub" aria-label="GitHub profile"><span class="icon icon-github" aria-hidden="true"></span></a>
+    </li>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <li class="social-item">
+    <a href="https://www.linkedin.com/in/seanwallis1" title="Linkedin" aria-label="Linkedin profile"><span class="icon icon-linkedin" aria-hidden="true"></span></a>
+  </li>
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+  </ul>
+</nav>
+
+  </header>
+  <main class="main">
+    
+  <div class="post-wrapper">
+    <header class="post-header">
+      <h1 class="post-title">Why Couscous Is Good For Documentation</h1>
+      <span class="post-meta">@Sean Wallis · Nov 18, 2017 · 3 min read</span>
+    </header>
+
+    <article class="post-content"><p>Writing documentation can seem like a chore, or even an afterthought. Yet we know that it&rsquo;s important so that others can use or maintain our code in future.</p>
+<p><img src="/media/posts/why-couscous-is-good/this-is-couscous.png" alt="This is couscous"></p>
+<p>That&rsquo;s where <a href="http://couscous.io/">Couscous</a> comes in. Couscous is a static website generator for your documentation. It takes your markdown files and then converts them to HTML, allowing you to quickly serve up your documentation in a readable format. You can even deploy directly to GitHub pages.</p>
+<p>For me the great advantage is that I can write docs in the familiar markdown format, alongside my code, under source control. I am then able to run a single command <code>couscous deploy</code> and my documents are online.
+Or if I choose not to use GitHub pages, I can first build the website using <code>couscous generate</code> and then deploy the code myself.</p>
+<h2 id="getting-started">Getting Started</h2>
+<p>We can install couscous globally using composer to use it easily on any project:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>composer global require couscous/couscous
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Then, assuming you have markdown files within you project, you can run <code>couscous preview</code> from your project directory to immediately see your documentation website. You can then view the result at <code>http://localhost:8000</code>.</p>
+<p><img src="/media/posts/why-couscous-is-good/couscous-step-1.png" alt="Step 1"></p>
+<h2 id="configuration">Configuration</h2>
+<p>Great, we have some documentation, but in order for it to be more useful we have to configure it a little.</p>
+<p>Let&rsquo;s say you then want to customise the appearance of the site. We could do so using a template and a <code>couscous.yml</code> file:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>template:
+</span></span><span style="display:flex;"><span>    url: https://github.com/sean-ww/Template-ReadTheDocs.git
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>We can set the template to a named directory or an external url (as shown above). Couscous already have a selection of <a href="http://couscous.io/templates.html">templates</a> that you can choose from, if you don&rsquo;t want to spend time making your own.</p>
+<p>Next I like to keep my documentation in a folder named docs, so let&rsquo;s specify that. By adding a specific directory, couscous will only parse the files in the specified location:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>template:
+</span></span><span style="display:flex;"><span>    url: https://github.com/sean-ww/Template-ReadTheDocs.git
+</span></span><span style="display:flex;"><span>include:
+</span></span><span style="display:flex;"><span>    - docs
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Next up we&rsquo;ll add a couple more variables. All variables we add in our yaml file will also be available in our template. In which case, both the title and baseUrl variables will be useful:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>template:
+</span></span><span style="display:flex;"><span>    url: https://github.com/sean-ww/Template-ReadTheDocs.git
+</span></span><span style="display:flex;"><span>include:
+</span></span><span style="display:flex;"><span>    - docs
+</span></span><span style="display:flex;"><span>title: React Redux Datatable
+</span></span><span style="display:flex;"><span>baseUrl: https://sean-ww.github.io/react-redux-datatable
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Then lastly, I want to add a navigation menu to move between the different documentation pages I create:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">31
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">32
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">33
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">34
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>template:
+</span></span><span style="display:flex;"><span>    url: https://github.com/sean-ww/Template-ReadTheDocs.git
+</span></span><span style="display:flex;"><span>include:
+</span></span><span style="display:flex;"><span>    - docs
+</span></span><span style="display:flex;"><span>title: React Redux Datatable
+</span></span><span style="display:flex;"><span>baseUrl: https://sean-ww.github.io/react-redux-datatable
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#0f0"># The left menu bar</span>
+</span></span><span style="display:flex;"><span>menu:
+</span></span><span style="display:flex;"><span>    sections:
+</span></span><span style="display:flex;"><span>        getStarted:
+</span></span><span style="display:flex;"><span>            text: Get Started
+</span></span><span style="display:flex;"><span>            items:
+</span></span><span style="display:flex;"><span>                getStarted:
+</span></span><span style="display:flex;"><span>                    text: Get Started
+</span></span><span style="display:flex;"><span>                    relativeUrl: get-started/get-started.html
+</span></span><span style="display:flex;"><span>        requestingData:
+</span></span><span style="display:flex;"><span>            text: Requesting Data
+</span></span><span style="display:flex;"><span>            items:
+</span></span><span style="display:flex;"><span>                overview:
+</span></span><span style="display:flex;"><span>                    text: Overview
+</span></span><span style="display:flex;"><span>                    relativeUrl: requesting-data/overview.html
+</span></span><span style="display:flex;"><span>                tableSettings:
+</span></span><span style="display:flex;"><span>                    text: Table Settings
+</span></span><span style="display:flex;"><span>                    relativeUrl: requesting-data/table-settings.html
+</span></span><span style="display:flex;"><span>                tableColumns:
+</span></span><span style="display:flex;"><span>                    text: Table Columns
+</span></span><span style="display:flex;"><span>                    relativeUrl: requesting-data/table-columns.html
+</span></span><span style="display:flex;"><span>        exportingData:
+</span></span><span style="display:flex;"><span>            text: Exporting Data
+</span></span><span style="display:flex;"><span>            items:
+</span></span><span style="display:flex;"><span>                overview:
+</span></span><span style="display:flex;"><span>                    text: Overview
+</span></span><span style="display:flex;"><span>                    relativeUrl: exporting-data/overview.html
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Please note that different templates will require different variables, so do check the documentation that relates to each template.</p>
+<p>Here&rsquo;s what my documentation looks like now with the above configuration:
+<img src="/media/posts/why-couscous-is-good/couscous-last-step.png" alt="Last step"></p>
+<p>And you&rsquo;ll find the real thing deployed <a href="https://sean-ww.github.io/react-redux-datatable/">here</a>.</p>
+</article>
+
+    <footer class="post-footer">
+      <p class="post-copyright">
+        &copy; Sean Wallis 2017-2026. This post was published <strong>3044</strong> days ago, content in the post may be outdated.
+      </p>
+    </footer>
+  </div>
+
+  </main>
+  <footer>
+    <script>
+  function initAllSplides() {
+    if (typeof Splide === 'undefined') {
+      setTimeout(initAllSplides, 50);
+      return;
+    }
+
+    document.querySelectorAll('.splide').forEach(function (element, index) {
+      if (!element.classList.contains('is-initialized')) {
+        const splide = new Splide(element);
+
+        splide.on('mounted', function () {
+          
+          const offsetDelay = index * 1500; 
+          setTimeout(function () {
+            splide.Components.Autoplay.play();
+          }, offsetDelay);
+        });
+
+        splide.mount();
+        element.classList.add('is-initialized');
+
+        
+        splide.Components?.Autoplay?.pause();
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', initAllSplides);
+</script>
+
+  </footer>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Sean Wallis</title>
+    <link>https://seanwallis.com/categories/</link>
+    <description>Recent content in Categories on Sean Wallis</description>
+    <generator>Hugo</generator>
+    <language>en-GB</language>
+    <copyright>&amp;copy; Sean Wallis</copyright>
+    <atom:link href="https://seanwallis.com/categories/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

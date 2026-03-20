@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://seanwallis.com/blog/</loc>
+    <lastmod>2023-01-01T08:30:00-07:00</lastmod>
+  </url><url>
+    <loc>https://seanwallis.com/</loc>
+    <lastmod>2023-01-01T08:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://seanwallis.com/blog/pdf-accessibility-for-web-developers/</loc>
+    <lastmod>2019-06-03T18:43:06+00:00</lastmod>
+  </url><url>
+    <loc>https://seanwallis.com/blog/web-accessibility-why-we-care-and-focus-on-readability/</loc>
+    <lastmod>2019-03-20T18:43:06+00:00</lastmod>
+  </url><url>
+    <loc>https://seanwallis.com/blog/web-accessibility-for-the-blind-and-visually-impaired/</loc>
+    <lastmod>2019-02-27T18:43:06+00:00</lastmod>
+  </url><url>
+    <loc>https://seanwallis.com/blog/resolving-changelog-merge-conflict-madness/</loc>
+    <lastmod>2018-11-05T18:43:06+00:00</lastmod>
+  </url><url>
+    <loc>https://seanwallis.com/blog/service-testing-with-behat-mink/</loc>
+    <lastmod>2017-12-04T16:35:40+00:00</lastmod>
+  </url><url>
+    <loc>https://seanwallis.com/blog/why-couscous-is-good/</loc>
+    <lastmod>2017-11-18T10:11:47+00:00</lastmod>
+  </url><url>
+    <loc>https://seanwallis.com/blog/testing-time/</loc>
+    <lastmod>2017-11-02T20:31:06+00:00</lastmod>
+  </url><url>
+    <loc>https://seanwallis.com/categories/</loc>
+  </url><url>
+    <loc>https://seanwallis.com/tags/</loc>
+  </url>
+</urlset>

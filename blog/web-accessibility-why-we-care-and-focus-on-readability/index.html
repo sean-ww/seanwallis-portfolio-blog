@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en-GB" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta name="author" content="Sean Wallis" />
+<meta name="description" content="Consultant. Full-Stack Software Engineer. PHP, JavaScript, React, Node.js, AWS." />
+<title>Web Accessibility: Why we care and focus on readability | Sean Wallis</title>
+
+
+
+<link rel="canonical" href="https://seanwallis.com/blog/web-accessibility-why-we-care-and-focus-on-readability/" />
+
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="format-detection" content="telephone=no,email=no,address=no" />
+
+
+
+<meta name="robots" content="index,follow" />
+
+<meta name="referrer" content="origin-when-cross-origin" />
+
+
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Sean Wallis" />
+<meta name="msapplication-tooltip" content="Sean Wallis" />
+<link rel="icon" href="/img/favicon.ico" />
+<link rel="icon" href="/img/icon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png" />
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/css/splide.min.css">
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/js/splide.min.js" defer></script>
+
+      <link rel="stylesheet" href="/css/main.min.ea43b610e8683cd8b9318048687b80f453fca667f8e5bf9a4e3afa18f69d8520.css" integrity="sha256-6kO2EOhoPNi5MYBIaHuA9FP8pmf45b&#43;aTjr6GPadhSA=" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/shufflejs@6" defer></script>
+
+        <script src="/js/main.cfbb34dd9f413d7eec6556b38d0b8b405285cb82bb3a5f422b8bd547798a53d4.js" integrity="sha256-z7s03Z9BPX7sZVazjQuLQFKFy4K7Ol9CK4vVR3mKU9Q=" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+  <header class="site-header">
+    
+<a class="avatar-link" href="/" title="Home">
+  <div class="avatar" data-label="SEAN WALLIS" data-label-short="S"></div>
+</a>
+
+
+
+  <nav class="page-menu" aria-label="Page Menu">
+    <ul>
+    <li>
+      <a href="/">Portfolio</a>
+    </li>
+    <li>
+      <a aria-current="true" class="ancestor" href="/blog/">Blog</a>
+    </li>
+    </ul>
+  </nav>
+
+
+
+  <h2 class="title">Sean Wallis - Blog</h2>
+
+<p class="subtitle">Consultant. Full-Stack Developer.<br>PHP, JavaScript, React, Node.js, AWS.</p>
+
+<nav class="social-menu">
+  <ul class="social-list">
+
+    
+
+    
+    <li class="social-item">
+      <a href="https://github.com/sean-ww" title="GitHub" aria-label="GitHub profile"><span class="icon icon-github" aria-hidden="true"></span></a>
+    </li>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <li class="social-item">
+    <a href="https://www.linkedin.com/in/seanwallis1" title="Linkedin" aria-label="Linkedin profile"><span class="icon icon-linkedin" aria-hidden="true"></span></a>
+  </li>
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+  </ul>
+</nav>
+
+  </header>
+  <main class="main">
+    
+  <div class="post-wrapper">
+    <header class="post-header">
+      <h1 class="post-title">Web Accessibility: Why we care and focus on readability</h1>
+      <span class="post-meta">@Sean Wallis · Mar 20, 2019 · 7 min read</span>
+    </header>
+
+    <article class="post-content"><p>Whether you want to boost your search engine performance and reach the widest possible audience, or just stay ahead of the game when it comes to legal compliance, then accessibility should be important to you. Thankfully, there are already guidelines for this.</p>
+<p>The Web Content Accessibility Guidelines (WCAG) are accessibility recommendations developed by The Web Accessibility Initiative (WAI), which is part of The World Wide Web Consortium (W3C). When they’re not too busy creating more acronyms, WCAG aim to provide a single shared standard, ensuring that users with different disabilities are able to access and interact with content as much as possible without restrictions.</p>
+<p>The latest guidelines are <a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1</a>.</p>
+<h2 id="why-should-we-care-about-accessibility">Why should we care about accessibility?</h2>
+<ul>
+<li>To increase reach and engagement with your content. The more people that can access your content the better.</li>
+<li>Boost search engine optimisation (SEO) results by making it easier for Google to better index your site and provide higher search positions. Improving the structure of your site and the content according to the W3C guidelines will really help with this.</li>
+<li>Meet any legal requirements. Web accessibility may be legally enforceable in future. In some countries it already is (such as Norway and Japan) and with consequences if you do not comply. In The Netherlands all government directed websites need to comply by 2020. Whilst legal requirements for business websites could be introduced in future.</li>
+</ul>
+<h2 id="focus-on-readability">Focus on Readability</h2>
+<p>Since the guidelines are so extensive, let’s focus on just one area for now; readability. That means making the content understandable to the user that is reading it, or listening via a screen reader. Let’s dive into a few things you can consider.</p>
+<h3 id="using-language-attributes-on-the-html-element">Using language attributes on the html element</h3>
+<p>Each time you write a html document you may make use of a lang or xml:lang attribute on the html element.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>&lt;!DOCTYPE HTML PUBLIC &#34;-//W3C//DTD HTML 4.01//EN&#34; &#34;https://www.w3.org/TR/html4/strict.dtd&#34;&gt;
+</span></span><span style="display:flex;"><span>&lt;html lang=&#34;fr&#34;&gt; 
+</span></span><span style="display:flex;"><span>&lt;head&gt;
+</span></span><span style="display:flex;"><span>  &lt;title&gt;Document français&lt;/title&gt;
+</span></span><span style="display:flex;"><span>  &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34; /&gt;
+</span></span><span style="display:flex;"><span>&lt;/head&gt;  
+</span></span><span style="display:flex;"><span>&lt;body&gt;     
+</span></span><span style="display:flex;"><span>	Document écrit en français.
+</span></span><span style="display:flex;"><span>&lt;/body&gt;
+</span></span><span style="display:flex;"><span>&lt;/html&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Setting this very simple attribute allows assistive technology to identify the default language for the page. Such technology could be helping a user to translate the page, aiding user agents providing dictionary definitions or even assisting pronunciations to a blind or braille provided to a deaf-blind user. There are many uses, both now and in the future.</p>
+<p><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H57">See the full guidelines on this technique for more information.</a></p>
+<p>The use of the lang or xml:lang attribute on the html element is required for Level A support according to the guidelines. These levels are split out to Level A, AA and AAA. With AAA giving the highest level of support. At level AA you should go a step further by identifying parts within your text where alternative languages are used and identifying them using a lang attribute on the relevant element. Doing so would for example aid a screen reader in pronouncing the parts of the text correctly. For instance, if we take an English sentence with a French expression: <!-- raw HTML omitted -->“He had a feeling of <!-- raw HTML omitted -->‘déjà vu’<!-- raw HTML omitted -->.”<!-- raw HTML omitted -->, the French part <!-- raw HTML omitted -->(<!-- raw HTML omitted -->déjà vu<!-- raw HTML omitted -->)<!-- raw HTML omitted --> can be placed within an element with the lang attribute.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>&lt;p lang=&#34;en&#34;&gt;
+</span></span><span style="display:flex;"><span>  He felt like he&#39;d been there before. He had a feeling of &lt;span lang=&#34;fr&#34;&gt;‘déjà vu’&lt;/span&gt;. Perhaps it was a familiar smell, or something.
+</span></span><span style="display:flex;"><span>&lt;/p&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>For AA, you may also consider the use of the hreflang attribute on link elements. This can indicate to a user when they are following a link to content in a different language, allowing them to decide if they wish to follow the link or not.</p>
+<h3 id="unusual-words-terms-abbreviations-and-acronyms">Unusual words, terms, abbreviations and acronyms</h3>
+<p>Let’s look more closely at the text content within a page. User’s may often come across words or terms that are unfamiliar to them. A popular approach to handle this is to provide a link to definitions as shown within the WCAG guidelines.</p>
+<p><img src="/media/posts/web-accessibility-why-we-care-and-focus-on-readability/criterion.png" alt="Screenshot of the Level AAA Success Criterion stating that a mechanism must be available for identifying specific definitions of words or phrases used in an unusual or restricted way, including idioms and jargon. The screenshot includes links to the definitions of unusual words."></p>
+<p>The corresponding definitions can then be found by the user to explain the term.</p>
+<p><img src="/media/posts/web-accessibility-why-we-care-and-focus-on-readability/word-and-phrase-explaination.png" alt="Screenshot of the definition that corresponds to idiom within the success criterion. It explains the meaning of the word, along with a note and some examples."></p>
+<p>We see the WCAG example for the term idiom. This could be implemented in a variety of ways. However it’s worth noting that this success criteria is for Level AAA. It may not be necessary for you to go as far as this level of support, but it’s good to understand what is required at each level.</p>
+<h3 id="reading-level">Reading level</h3>
+<p>For AAA the aim is to provide text that can be understood by people with lower secondary education reading level. This translates to 9 years after starting primary (compulsory) education (about 7-9 years of schooling).</p>
+<p>Examples of things that can improve readability:</p>
+<ul>
+<li>Providing summaries of the most important content</li>
+<li>Use the clearest and simplest language appropriate for the content</li>
+<li>Use shorter sentences and more common words</li>
+<li>Break up content with well organised sections and headings (heading levels &lt;h1&gt; to &lt;h6&gt; should be used correctly in hierarchical order, and not based on appearance. Start with &lt;h1&gt;, then &lt;h2&gt; etc. Do not skip levels).</li>
+<li>Provide supplementary illustrations, pictures and symbols to explain where beneficial</li>
+<li>Avoid or minimise professional jargon, slang and idioms</li>
+<li>Listed content (bulleted or numbered) can help simplify text</li>
+<li>Consistent use of tenses</li>
+</ul>
+<p>One way of measuring reading level is via the Common European Framework of Reference for Languages: Learning, Teaching, Assessment (CEFR). It evaluates languages on six levels: A1, A2, B1, B2, C1, C2. Where A1 indicates very basic reading skills, and C2 indicates fluency or mastery of the language. The average reading level of the Dutch population is B1, and research has shown that 27.1% of the population cannot read above (International Adult Literacy Survey) IALS level 2, which is more or less equivalent to CEFR level B1 <a href="#references">1</a>. We can then equate level B1 with the reading level we need to satisfy AAA. A text that reads at level B1 or lower (A1, A2) should therefore give assurance that the text can be understood well by the majority of its audience, whereas B2 or higher could cause issue. There are online tools available for testing the CEFR level of text, such as:</p>
+<ul>
+<li><a href="https://www.accessibility.nl/kennisbank/tools/leesniveau-tool">Leesniveau Tool</a></li>
+<li><a href="http://www.roadtogrammar.com/textanalysis/">Text Analyzer</a></li>
+</ul>
+<p>In addition to the tool to assess the language level, you could also then make use of something like the <a href="http://www.hemingwayapp.com/">Hemingway Editor</a> which gives feedback and suggestions upon your entered text in order to help you improve the readability score. Let’s give it a go with an example from the editor.</p>
+<p>The following text is considered B2/C1 with Leesniveau Tool and C1 with Text Analyzer:</p>
+<!-- raw HTML omitted -->
+<p>Then we simplify the text, remove the errors and make it significantly shorter. It then gets a good Hemingway grade, but is still only B2 via the Leesniveau Tool. Whilst it does achieve B1 according to Text Analyser:</p>
+<!-- raw HTML omitted -->
+<p>This shows just how difficult it can be to truly achieve AAA, and should be a reminder that WCAG is a guideline only. In all cases it is of course important to consider your target audience when utilising such tools. A government website presenting information to everyone is different from a tech blog that is written for a specific audience, using technical terminology.</p>
+<h2 id="further-reading">Further reading</h2>
+<p>On top of the tools suggested for readability, there are many other tools and sources of information you may find useful:</p>
+<ul>
+<li><a href="https://www.section508.gov/">Section 508 – US Accessibility Guidance</a></li>
+<li><a href="https://a11yproject.com/resources">a11y Project Resources</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd">aXe browser extension</a></li>
+<li><a href="https://siteimprove.com/en-us/">Site Improve</a></li>
+<li><a href="https://wave.webaim.org/extension/">WAVE (Web Accessibility Evaluation Tool) Extensions</a></li>
+<li><a href="https://github.com/evcohen/eslint-plugin-jsx-a11y">eslint jsx a11y plugin</a></li>
+<li><a href="https://github.com/dequelabs/react-axe">React-axe for testing your React applications</a></li>
+<li><a href="http://davidtheclark.github.io/react-aria-modal/demo/">Accessible modals for React</a></li>
+</ul>
+<h3 id="wai">WAI</h3>
+<p>WAI have also developed several other W3C recommendations, such as:</p>
+<ul>
+<li><a href="https://www.w3.org/WAI/standards-guidelines/atag/">Authoring Tool Accessibility Guidelines (ATAG)</a></li>
+<li><a href="https://www.w3.org/WAI/standards-guidelines/uaag/">User Agent Accessibility Guidelines (UAAG)</a></li>
+<li><a href="https://www.w3.org/WAI/standards-guidelines/aria/">Accessible Rich Internet Applications (WAI-ARIA)</a></li>
+</ul>
+<h3 id="references">References</h3>
+<ol>
+<li>Bohnenn, E., Ceulemans, C., Guchte, C, van de., Kurvers, J., Tendeloo, T, van. (2004). Laaggeletterd in de Lage Landen, Hoge prioriteit voor beleid. Den Haag: Nederlandse Taalunie.</li>
+</ol>
+<p>This post was also published on <a href="https://enrise.com/2019/03/web-accessibility-why-we-care-and-focus-on-readability/">enrise.com</a></p>
+</article>
+
+    <footer class="post-footer">
+      <p class="post-copyright">
+        &copy; Sean Wallis 2019-2026. This post was published <strong>2557</strong> days ago, content in the post may be outdated.
+      </p>
+    </footer>
+  </div>
+
+  </main>
+  <footer>
+    <script>
+  function initAllSplides() {
+    if (typeof Splide === 'undefined') {
+      setTimeout(initAllSplides, 50);
+      return;
+    }
+
+    document.querySelectorAll('.splide').forEach(function (element, index) {
+      if (!element.classList.contains('is-initialized')) {
+        const splide = new Splide(element);
+
+        splide.on('mounted', function () {
+          
+          const offsetDelay = index * 1500; 
+          setTimeout(function () {
+            splide.Components.Autoplay.play();
+          }, offsetDelay);
+        });
+
+        splide.mount();
+        element.classList.add('is-initialized');
+
+        
+        splide.Components?.Autoplay?.pause();
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', initAllSplides);
+</script>
+
+  </footer>
+</body>
+</html>
