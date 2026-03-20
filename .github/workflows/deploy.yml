@@ -21,12 +21,9 @@ jobs:
           fetch-depth: 0
 
       - name: Install Hugo
-        run: |
-          HUGO_VERSION=0.157.0
-          URL="https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.deb"
-          echo "Downloading Hugo from $URL"
-          curl -OLkSs "$URL"
-          sudo dpkg -i hugo*.deb
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.157.0'
 
       - name: Build with Hugo
         run: |
